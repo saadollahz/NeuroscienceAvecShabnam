@@ -1,7 +1,7 @@
 const sections = document.querySelectorAll('section');
 const bubble = document.querySelector('.bubble');
 const gradients = [
-    "linear-gradient(to right top, black, red)",
+    "linear-gradient(to right top, black, green)",
     'linear-gradient(to right top, blue, green)',
     'linear-gradient(to right top, yellow, pink)'
 ];

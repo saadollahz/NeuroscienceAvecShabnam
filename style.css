@@ -9,7 +9,7 @@ body {
 }
 
 header {
-    box-shadow: 0px 3px 10px rgba(78, 80, 125);
+    box-shadow: 0px 3px 10px rgba(99, 20, 80);
     position: sticky;
     top: 0;
     background-color: #fff;
@@ -24,10 +24,11 @@ nav {
     justify-content: space-between;
 }
 
-header h1,
+header h2,
 ul {
-    font: size 1.5rem;
+    font-size: 1rem;
     flex: 1;
+    cursor: pointer;
 }
 
 nav ul {
@@ -39,6 +40,10 @@ nav ul {
 nav a {
     color: black;
     text-decoration: none;
+}
+
+nav a:hover {
+    font-size: 20px;
 }
 
 section {
@@ -54,7 +59,7 @@ section h2 {
 }
 
 .home {
-    background: linear-gradient(to right top, black, red)
+    background: linear-gradient(to right top, black, green)
 }
 
 .projects {
@@ -68,7 +73,42 @@ section h2 {
 .bubble {
     position: absolute;
     z-index: -2;
-    background: linear-gradient(to right top, yellow, pink);
     transform: scale(2);
-    transition: all 0.5s ease
+    transition: all 0.8s ease
+}
+
+@media screen and (max-width: 800px) {
+    .lins {
+        width: 36px;
+        height: 3px;
+        background: rgb(12, 56, 175);
+        margin: 5px;
+    }
+    .nav-links {
+        justify-content: center;
+        position: absolute;
+        border-radius: 30px;
+        padding: 5px;
+        margin-top: 500px;
+        background-color: #fff;
+        height: 10vh;
+        width: 100px;
+        flex-direction: column;
+    }
+}
+
+.search {
+    display: flex;
+    margin-top: 30px;
+}
+
+#input {
+    padding: 1px;
+    border-radius: 5px;
+    border-style: double blue;
+    border-color: lawngreen
+}
+
+#input:hover {
+    border-color: aqua;
 }
